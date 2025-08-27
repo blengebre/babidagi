@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256">
+  <title>Dagimawi Seyum – Minimal Lens Mark</title>
+  <defs>
+    <style>
+      .bg { fill: #0a0a0a; }
+      .accent { fill: #00ff88; }
+      .stroke { stroke: #00ff88; stroke-width: 10; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <!-- Circle badge -->
+  <circle cx="128" cy="128" r="112" class="bg"/>
+  <circle cx="128" cy="128" r="108" class="stroke"/>
+  <!-- Camera top bar -->
+  <path class="stroke" d="M62 84h132"/>
+  <!-- Lens ring -->
+  <circle cx="128" cy="138" r="44" class="stroke"/>
+  <!-- Aperture triangle (play cue) -->
+  <polygon class="accent" points="118,118 150,138 118,158"/>
+  <!-- Subtle DS monogram using negative space: D arc + S wave -->
+  <path class="stroke" d="M88 98c24 0 40 10 40 40s-16 40-40 40" opacity="0.55"/>
+  <path class="stroke" d="M152 110c-12 6-12 14 0 20 12 6 12 14 0 20" opacity="0.55"/>
+</svg>
+

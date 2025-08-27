@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+  <title>Dagimawi Seyum – Minimal Lens Lockup</title>
+  <defs>
+    <style>
+      .bg { fill: #0a0a0a; }
+      .accent { fill: #00ff88; }
+      .stroke { stroke: #00ff88; stroke-width: 10; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .name { font: 800 68px 'Inter', Arial, sans-serif; fill: #ffffff; }
+      .prod { font: 600 26px 'Inter', Arial, sans-serif; fill: #bdc3c7; letter-spacing: 9px; text-transform: uppercase; }
+    </style>
+  </defs>
+  <!-- Mark to the left -->
+  <g transform="translate(38,20)">
+    <circle cx="100" cy="120" r="96" class="bg"/>
+    <circle cx="100" cy="120" r="92" class="stroke"/>
+    <path class="stroke" d="M52 82h96"/>
+    <circle cx="100" cy="130" r="38" class="stroke"/>
+    <polygon class="accent" points="92,110 120,130 92,150"/>
+    <path class="stroke" d="M68 98c20 0 34 10 34 32s-14 32-34 32" opacity="0.55"/>
+    <path class="stroke" d="M132 104c-10 6-10 12 0 18 10 6 10 12 0 18" opacity="0.55"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(260,116)">
+    <text class="name">Dagimawi Seyum</text>
+    <text class="prod" y="56">Productions</text>
+  </g>
+</svg>
+
