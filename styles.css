@@ -836,6 +836,12 @@ body {
         font-size: 2.5rem;
     }
 
+    /* Make hero image smaller on tablets/phones */
+    .hero-photo {
+        width: 280px;
+        height: 280px;
+    }
+
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
@@ -874,6 +880,12 @@ body {
         font-size: 2rem;
     }
 
+    /* Further reduce hero image size on small phones */
+    .hero-photo {
+        width: 200px;
+        height: 200px;
+    }
+
     .section-header h2 {
         font-size: 2rem;
     }
@@ -885,4 +897,10 @@ body {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Ensure images never overflow their containers */
+img {
+    max-width: 100%;
+    height: auto;
 }
