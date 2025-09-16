@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Ensure images scale down on small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 :root {
     --bg: #0a0a0a;
     --text: #ffffff;
@@ -814,16 +820,23 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #0a0a0a;
+        background-color: var(--bg);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
+        z-index: 1001;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-menu .nav-link {
+        color: var(--text);
+        display: inline-block;
+        padding: 0.75rem 0;
     }
 
     .hero-content {
@@ -836,7 +849,6 @@ body {
         font-size: 2.5rem;
     }
 
-    /* Make hero image smaller on tablets/phones */
     .hero-photo {
         width: 280px;
         height: 280px;
@@ -880,10 +892,25 @@ body {
         font-size: 2rem;
     }
 
-    /* Further reduce hero image size on small phones */
+    .container {
+        padding: 0 14px;
+    }
+
+    .hero-content {
+        gap: 1.5rem;
+    }
+
     .hero-photo {
-        width: 200px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .portfolio-image img {
         height: 200px;
+    }
+
+    .service-card {
+        padding: 1.5rem;
     }
 
     .section-header h2 {
@@ -899,8 +926,26 @@ body {
     }
 }
 
-/* Ensure images never overflow their containers */
-img {
-    max-width: 100%;
-    height: auto;
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .hero-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
 }
